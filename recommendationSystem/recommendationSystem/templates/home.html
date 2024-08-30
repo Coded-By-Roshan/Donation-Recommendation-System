@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REcommend me </title>
+</head>
+<body>
+    <div class="container">
+        {% for p in posts %}
+        <div class="post_box">
+            <h1>{{p.title}}</h1>
+            <p>{{p.description}}</p>
+        </div>
+        {% endfor %}
+
+    </div>
+    
+</body>
+</html>
